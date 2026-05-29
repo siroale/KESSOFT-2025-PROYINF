@@ -16,11 +16,786 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.6.2",
-        "cells": []
+        "cells": [
+          {
+            "position": {
+              "x": 710,
+              "y": 610
+            },
+            "size": {
+              "width": 430,
+              "height": 160
+            },
+            "attrs": {
+              "label": {
+                "text": "Red interna"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "c4f81d97-c0ec-4ff3-ab47-d054760c4e2c",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Red interna",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "46878a6c-e221-40fc-8bff-91ee228c2d51"
+              ],
+              "containedElements": [
+                "338c326f-fdd2-49cc-b046-5b2ef490210e",
+                "001e7c1f-a0a7-427f-b471-b07862a49ce6"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 429,
+              "y": 660
+            },
+            "size": {
+              "width": 110,
+              "height": 90
+            },
+            "attrs": {
+              "text": {
+                "text": "Frontend\nReact"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "eefda6fb-49c2-4d8e-9165-ab3c3d27ed97"
+                },
+                {
+                  "group": "right",
+                  "id": "f2848d2f-0e8a-4049-9f5f-0f3905a53ff2"
+                },
+                {
+                  "group": "bottom",
+                  "id": "1a8b2432-721b-4130-b87c-76f1a2541b48"
+                },
+                {
+                  "group": "left",
+                  "id": "265779ab-0c3a-4254-a770-f4c1717597ec"
+                }
+              ]
+            },
+            "id": "e1842fa7-f51c-4d72-8479-623be79187bf",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Process",
+              "name": "Frontend\nReact",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "b56dec01-402a-41ed-9c73-13967ab776b4",
+                  "title": "Cross-Site Scripting (XSS) Almacenado",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Los campos de texto de los Boletines no se sanitizan. Un atacante puede inyectar scripts JavaScript maliciosos que se guardan en la base de datos y luego se ejecutan automáticamente en el navegador de otros usuarios (o administradores) al visualizar el boletín, permitiendo el robo de sesiones.",
+                  "mitigation": "Sanitizar la entrada de datos en el backend (usando librerías como bleach). En el frontend, asegurar que React escape los datos por defecto y evitar estrictamente el uso de funciones como dangerouslySetInnerHTML con contenido provisto por usuarios.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 2,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 729,
+              "y": 660
+            },
+            "size": {
+              "width": 90,
+              "height": 90
+            },
+            "attrs": {
+              "text": {
+                "text": "Backend\nDjango\nAPI"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "eefda6fb-49c2-4d8e-9165-ab3c3d27ed97"
+                },
+                {
+                  "group": "right",
+                  "id": "f2848d2f-0e8a-4049-9f5f-0f3905a53ff2"
+                },
+                {
+                  "group": "bottom",
+                  "id": "1a8b2432-721b-4130-b87c-76f1a2541b48"
+                },
+                {
+                  "group": "left",
+                  "id": "265779ab-0c3a-4254-a770-f4c1717597ec"
+                }
+              ]
+            },
+            "id": "338c326f-fdd2-49cc-b046-5b2ef490210e",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Process",
+              "name": "Backend\nDjango\nAPI",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "e66dda90-e8c3-498a-8b73-f90c43b8f201",
+                  "title": "BOLA/IDOR en la API",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "Un atacante autenticado podría modificar o eliminar un \"Boletín\" o \"Usuario\" que no le pertenece, manipulando el ID en la URL de la API (ej. PUT /api/boletines/5/), si el backend no verifica correctamente la propiedad del recurso.",
+                  "mitigation": "Implementar validación de permisos a nivel de objeto en views.py (ej. usando IsOwnerOrReadOnly en Django REST Framework) verificando que request.user coincida con el creador del boletín antes de procesar la acción.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                },
+                {
+                  "id": "9b0f2e8e-176d-4a12-b333-dc607e5fb7f9",
+                  "title": "Subida de archivos maliciosos sin restricción",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "El endpoint de creación permite subir archivos sin validar rigurosamente su tipo MIME real ni su tamaño límite. Un atacante podría subir scripts ejecutables (web shells) o saturar el almacenamiento del servidor subiendo archivos gigantes (DoS).",
+                  "mitigation": "Validar estrictamente la extensión y el content-type de los archivos subidos. Forzar un renombramiento aleatorio del archivo al guardar y limitar DATA_UPLOAD_MAX_MEMORY_SIZE en la configuración de Django.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                },
+                {
+                  "id": "4512dc1f-3d69-4d77-bbbf-416c4cd51abb",
+                  "title": "Exposición de SECRET_KEY en el código fuente",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "La SECRET_KEY de Django está expuesta en el archivo README.md o en el control de versiones. Un atacante puede usarla para falsificar cookies de sesión, firmar tokens fraudulentos y potencialmente tomar control total de la aplicación ejecutando código remoto.",
+                  "mitigation": "Eliminar la llave del repositorio inmediatamente. Generar una nueva llave segura y cargarla en el entorno de producción únicamente a través de variables de entorno (.env) que estén excluidas en el .gitignore.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 2,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 1
+              }
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Peticiones HTTP/REST",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "47849d9b-9e98-49ea-acd7-63068bd162e5",
+                  "title": "Interceptación de credenciales (Man in the Middle)",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Si la comunicación entre el cliente y el servidor se realiza en texto plano (HTTP), un atacante posicionado en la misma red puede interceptar el tráfico, leyendo en claro los tokens de autenticación, contraseñas o datos sensibles de los boletines.",
+                  "mitigation": "Desplegar la aplicación detrás de un proxy inverso que fuerce el cifrado TLS/HTTPS para todo el tráfico. Configurar las cookies de sesión y tokens con los flags de seguridad Secure y HttpOnly.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "c4f81d97-c0ec-4ff3-ab47-d054760c4e2c"
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Peticiones HTTP/REST"
+            ],
+            "id": "46878a6c-e221-40fc-8bff-91ee228c2d51",
+            "source": {
+              "x": 530,
+              "y": 700
+            },
+            "target": {
+              "cell": "338c326f-fdd2-49cc-b046-5b2ef490210e",
+              "port": "265779ab-0c3a-4254-a770-f4c1717597ec"
+            },
+            "vertices": []
+          },
+          {
+            "position": {
+              "x": 117.99999999999997,
+              "y": 665
+            },
+            "size": {
+              "width": 130,
+              "height": 80
+            },
+            "attrs": {
+              "text": {
+                "text": "Usuario/Atacante"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "c960d77b-628d-4d4d-8a2c-f305723f1538"
+                },
+                {
+                  "group": "right",
+                  "id": "f6cb78a0-2e3e-4bb2-979c-9fb7816fd0f1"
+                },
+                {
+                  "group": "bottom",
+                  "id": "ea2e0dce-25f0-438d-af7d-5b66b1686f31"
+                },
+                {
+                  "group": "left",
+                  "id": "8a748332-be69-4ff0-8fef-7a0c6884f50d"
+                }
+              ]
+            },
+            "id": "67b301a3-f093-484f-88bb-cb8cfc6d3558",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Usuario/Atacante",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 960,
+              "y": 675
+            },
+            "size": {
+              "width": 160,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "PostgreSQL DB"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "9beb2320-3eca-415d-a8fb-a6aa86311674"
+                },
+                {
+                  "group": "right",
+                  "id": "a86a80bf-7386-4bc8-a656-67d776c3eaae"
+                },
+                {
+                  "group": "bottom",
+                  "id": "42bc02d3-b67b-46e2-81dc-8ad589506d03"
+                },
+                {
+                  "group": "left",
+                  "id": "05feb2b1-af2c-4fb4-9762-d3df629c0d38"
+                }
+              ]
+            },
+            "id": "001e7c1f-a0a7-427f-b471-b07862a49ce6",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Store",
+              "name": "PostgreSQL DB",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "29888ab0-5ad9-439b-9517-6a1792ca98ef",
+                  "title": "Exposición del puerto de base de datos a redes externas",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Information disclosure",
+                  "description": "Si el contenedor de PostgreSQL expone su puerto (5432) hacia el host sin restricciones de IP, queda vulnerable a ataques de fuerza bruta o explotación de vulnerabilidades de la base de datos desde el exterior, exponiendo toda la información de los usuarios.",
+                  "mitigation": "Modificar el archivo docker-compose.yml para que la base de datos solo esté expuesta a la red interna de Docker, eliminando el mapeo de puertos hacia el host exterior. Cifrar los volúmenes de Docker donde se guardan los datos persistentes.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 13,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Consultas SQL",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Consultas SQL"
+            ],
+            "id": "d02fd11d-19f4-4a91-8997-94cd26c81fd0",
+            "source": {
+              "cell": "338c326f-fdd2-49cc-b046-5b2ef490210e",
+              "port": "f2848d2f-0e8a-4049-9f5f-0f3905a53ff2"
+            },
+            "target": {
+              "cell": "001e7c1f-a0a7-427f-b471-b07862a49ce6",
+              "port": "05feb2b1-af2c-4fb4-9762-d3df629c0d38"
+            },
+            "vertices": [
+              {
+                "x": 902,
+                "y": 700
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 14,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Interacción Web",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Interacción Web"
+            ],
+            "id": "832e0e68-2db2-4de9-b52c-252e8ba8cb4f",
+            "source": {
+              "cell": "67b301a3-f093-484f-88bb-cb8cfc6d3558",
+              "port": "f6cb78a0-2e3e-4bb2-979c-9fb7816fd0f1"
+            },
+            "target": {
+              "cell": "e1842fa7-f51c-4d72-8479-623be79187bf",
+              "port": "265779ab-0c3a-4254-a770-f4c1717597ec"
+            },
+            "vertices": []
+          }
+        ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 6
   }
 }
