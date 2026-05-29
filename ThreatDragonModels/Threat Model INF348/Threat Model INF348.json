@@ -19,11 +19,11 @@
         "cells": [
           {
             "position": {
-              "x": 1100,
-              "y": 430
+              "x": 730,
+              "y": 615.0000000000002
             },
             "size": {
-              "width": 430,
+              "width": 440,
               "height": 160
             },
             "attrs": {
@@ -41,8 +41,14 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
+              "crossingFlows": [
+                "28d4a492-c295-41d9-952d-454a130a4849",
+                "d84eb248-079e-46de-90b4-3f1bfb076e5f"
+              ],
+              "containedElements": [
+                "338c326f-fdd2-49cc-b046-5b2ef490210e",
+                "001e7c1f-a0a7-427f-b471-b07862a49ce6"
+              ]
             }
           },
           {
@@ -454,7 +460,9 @@
                   "score": ""
                 }
               ],
-              "trustBoundaryIds": [],
+              "trustBoundaryIds": [
+                "c4f81d97-c0ec-4ff3-ab47-d054760c4e2c"
+              ],
               "threatFrequency": {
                 "tampering": 0,
                 "informationDisclosure": 1,
@@ -562,7 +570,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "c4f81d97-c0ec-4ff3-ab47-d054760c4e2c"
+              ]
             },
             "labels": [
               "Consultas SQL"
@@ -913,7 +923,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Resultados SQL",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -927,17 +937,18 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Resultados SQL"
             ],
             "id": "c8513da0-7879-4980-95d0-9874b6dcdd71",
             "source": {
-              "x": 960,
-              "y": 710
+              "cell": "001e7c1f-a0a7-427f-b471-b07862a49ce6",
+              "port": "05feb2b1-af2c-4fb4-9762-d3df629c0d38"
             },
             "target": {
               "cell": "338c326f-fdd2-49cc-b046-5b2ef490210e",
               "port": "f2848d2f-0e8a-4049-9f5f-0f3905a53ff2"
-            }
+            },
+            "vertices": []
           }
         ]
       }
