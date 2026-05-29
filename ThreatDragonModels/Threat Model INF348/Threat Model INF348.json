@@ -33,8 +33,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "c4f81d97-c0ec-4ff3-ab47-d054760c4e2c",
             "zIndex": -1,
+            "id": "c4f81d97-c0ec-4ff3-ab47-d054760c4e2c",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Red interna",
@@ -71,6 +71,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -154,7 +155,6 @@
               ]
             },
             "id": "e1842fa7-f51c-4d72-8479-623be79187bf",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Frontend\nReact",
@@ -213,6 +213,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -296,7 +297,6 @@
               ]
             },
             "id": "338c326f-fdd2-49cc-b046-5b2ef490210e",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Backend\nDjango\nAPI",
@@ -450,6 +450,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -533,7 +534,6 @@
               ]
             },
             "id": "67b301a3-f093-484f-88bb-cb8cfc6d3558",
-            "zIndex": 11,
             "data": {
               "type": "tm.Actor",
               "name": "Usuario/Atacante",
@@ -572,6 +572,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -655,7 +656,6 @@
               ]
             },
             "id": "001e7c1f-a0a7-427f-b471-b07862a49ce6",
-            "zIndex": 12,
             "data": {
               "type": "tm.Store",
               "name": "PostgreSQL DB",
